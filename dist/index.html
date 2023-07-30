@@ -44,9 +44,9 @@
     <!-- =============== -->
     <!-- Nav bar -->
     <header
-      class="bg-myback text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-7"
+      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14"
     >
-      <div class="text-xl pt-2 font-bold">
+      <div class="text-xl pt-2 font-bold cursor-pointer">
         <h2>
           <i class="fa-solid fa-clone ml-4 pr-3 text-hoverColor"></i>
           Fred<span class="font-normal">Code</span>
@@ -54,19 +54,41 @@
       </div>
 
       <!-- menu list -->
-      <ul
-        class="flex flex-row pr-8 gap-9 text-1xl pt-2 hover:text-hoverColor transition ease-in-out font-semibold"
-      >
-        <li><a class="" href="./index.html">Home</a></li>
-        <li><a href="#services">My Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="./about.html" target="_blank">About</a></li>
-        <li><a href="./blog.html" target="_blank">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./index.html">Home</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#services">My Services</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#projects">Projects</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./about.html" target="_blank">About</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./blog.html" target="_blank">Blog</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
 
       <div
-        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition ease-in-out font-semibold"
+        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
       >
         <a href="../Images/Ayodeji Abolaji Resume.pdf" target="_blank"
           >Employ Me</a
@@ -81,8 +103,8 @@
     <!-- The Hero Section - Container -->
 
     <!--hero-section-left-->
-    <section class="max-w-screen-lg m-10 mt-20 flex flex-row">
-      <div class="w-4/5 pt-20 pr-20">
+    <section class="max-w-screen-lg m-20 flex left-0 top-40 flex-row">
+      <div class="w-4/5 pt-20 mt-16 pr-20">
         <h3 class="text-2xl pb-6 fw">Hello! I'm</h3>
         <h1 class="text-5xl pb-6 font-extrabold">ABOLAJI ALFRED</h1>
         <p class="text-1xl pb-6 leading-8">
@@ -91,7 +113,7 @@
         </p>
 
         <div
-          class="text-1xl animate-pulse w-36 text-center bg-hoverColor py-3 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition ease-in-out font-semibold"
+          class="text-1xl left-10 shadow-lg shadow-blue-500/30 animate-pulse w-36 text-center bg-hoverColor py-3 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
         >
           <a
             href="https://api.whatsapp.com/send/?phone=2348104244450"
@@ -102,14 +124,16 @@
       </div>
 
       <!--hero-section-right-->
-      <div class="bg-mySecColor h-max w-3/6 ml-20">
+      <div
+        class="bg-mySecColor object-cover mt-24 border-8 left-10 shadow-lg shadow-blue-500/30 w-3/6 ml-20"
+      >
         <img src="../Images/ABolaji-img.png" alt="abolaji-image" />
       </div>
 
       <!--social-media-icon-->
-      <div class="mt-7 ml-9 text-2xl animate-bounce w-6 h-6">
+      <div class="mt-36 ml-16 text-2xl animate-bounce w-6 h-6">
         <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition linear cursor-pointer"
+          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
         >
           <a href="https://github.com/bant095" target="_blank"
             ><i class="fa-brands fa-github"></i
@@ -117,7 +141,7 @@
         </div>
 
         <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition linear cursor-pointer"
+          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
         >
           <a href="abolajiayodeji2@gmail.com" target="_blank"
             ><i class="fa-solid fa-envelope"></i
@@ -125,7 +149,7 @@
         </div>
 
         <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition linear cursor-pointer"
+          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
         >
           <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
             ><i class="fa-brands fa-twitter"></i
@@ -133,7 +157,7 @@
         </div>
 
         <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition linear cursor-pointer"
+          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
         >
           <a
             href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
@@ -143,7 +167,7 @@
         </div>
 
         <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition linear cursor-pointer"
+          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
         >
           <a href="https://hashnode.com/@Alfred08" target="_blank"
             ><i class="fa-brands fa-hashnode"></i
@@ -530,7 +554,7 @@
         <input
           type="submit"
           value="Submit"
-          class="w-3/5 m-3 p-3 mb-24 text-1xl bg-hoverColor cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition ease-in-out font-semibold"
+          class="w-3/5 m-3 p-3 mb-24 text-1xl bg-hoverColor cursor-pointer left-10 shadow-lg shadow-blue-500/30 rounded-md hover:bg-slate-400 mr-4 font-semibold"
         />
       </form>
     </section>
@@ -541,14 +565,14 @@
     <footer class="m-20 border-t-2 text-gray-400 border-gray-400">
       <div class="flex flex-row justify-between gap-32 w-5/6 mt-8">
         <div class="">
-          <h2 class="pb-3 font-semibold">
+          <h2 class="pb-3 font-semibold text-white">
             <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
               >Code</span
             >
           </h2>
           <div class="">
             <h2 class="text-xl pb-1 font-semibold">About</h2>
-            <p class="w-80">
+            <p class="w-80 font-light">
               I'm Alfred, a passionate Software Engineer with a strong affinity
               for problem-solving, team building, and developing innovative
               organizational products with my technical expertise.
@@ -558,41 +582,53 @@
 
         <!-- Middle footer -->
         <div class="w-full">
-          <h2 class="pb-3 font-semibold">Newsletter</h2>
-          <p>Stay updated with my latest trends</p>
+          <h2 class="pb-3 font-semibold text-white">Newsletter</h2>
+          <p class="font-light">Stay updated with my latest trends</p>
           <input
-            class="w-full p-2 mt-2 text-myback"
+            class="w-3/5 p-2 mt-2 text-myback"
             type="email"
             id="email"
             placeholder="Enter Email Address"
-          /><span><i class="fa-solid fa-arrow-right"></i></span>
+          /><span
+            ><i
+              class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+            ></i
+          ></span>
         </div>
 
         <!-- Left footer -->
-        <div class="w-4/5">
-          <h3 class="pb-3 font-semibold">Follow Me</h3>
-          <p>Let us be social</p>
+        <div class="w-3/4/5 ml-8">
+          <h3 class="pb-3 font-semibold text-white">Follow Me</h3>
+          <p class="font-light">Let us be social</p>
           <!-- socials -->
-          <div class="flex flex-row">
-            <div class="text-xl pr-5 cursor-pointer hover:hoverColor">
+          <div class="flex flex-row gap-4 text-xl pt-3">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
               <a href="https://github.com/bant095" target="_blank"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
 
-            <div class="">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
               <a href="abolajiayodeji2@gmail.com" target="_blank"
                 ><i class="fa-solid fa-envelope"></i
               ></a>
             </div>
 
-            <div class="social-media">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
               <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </div>
 
-            <div class="social-media">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
               <a
                 href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
                 target="_blank"
@@ -600,7 +636,9 @@
               ></a>
             </div>
 
-            <div class="">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
               <a href="https://hashnode.com/@Alfred08" target="_blank"
                 ><i class="fa-brands fa-hashnode"></i
               ></a>
@@ -612,12 +650,12 @@
       <!-- down center -->
       <div class="text-center mt-16">
         <div
-          class="absolute left-10 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
+          class="z-10 absolute left-10 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
         >
-          <a href="./index.html"><i class="fa-solid fa-arrow-up"></i></a>
+          <a href="./index.html"><i class="fa-solid fa-arrow-up sticky"></i></a>
         </div>
         <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
-        <small>Developed By @FredCode🤩</small>
+        <small class="font-light">Developed By @FredCode🤩</small>
       </div>
     </footer>
   </body>
