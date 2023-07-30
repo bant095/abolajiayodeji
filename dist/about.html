@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ABOLAJI AYODEJI PORTFOLIO WEBSITE | ABOUT</title>
     <script>
@@ -24,110 +28,146 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              myBack: "0F172A",
-              mySecColor: "1E293B",
-              hoverColor: "38BDF8",
+              myback: "#0F172A",
+              mySecColor: "#1E293B",
+              hoverColor: "#38BDF8",
+            },
+            fontFamily: {
+              body: ["Lato", "sans-serif"],
             },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-myback">
+  <body class="font-body bg-myback text-white">
     <!-- =============== -->
     <!-- Nav bar -->
-    <header class="bg-cyan-100 text-black-50 flex flex-row">
-      <div class="">
-        <h2><i class="fa-solid fa-clone"></i>Fred<span>Code</span></h2>
+    <header
+      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14"
+    >
+      <div class="text-xl pt-2 font-bold cursor-pointer">
+        <h2>
+          <i class="fa-solid fa-clone ml-4 pr-3 text-hoverColor"></i>
+          Fred<span class="font-normal">Code</span>
+        </h2>
       </div>
-      <!-- menu icon-->
-      <i class="fa-solid fa-bars"></i>
 
       <!-- menu list -->
-      <ul class="flex flex-row bg-slate-700">
-        <li><a class="home" href="./index.html">Home</a></li>
-        <li><a href="#services">My Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+      <ul class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./index.html">Home</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#services">My Services</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#projects">Projects</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./about.html" target="_blank">About</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./blog.html" target="_blank">Blog</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
 
-      <div class="">
+      <div
+        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
+      >
         <a href="../Images/Ayodeji Abolaji Resume.pdf" target="_blank"
           >Employ Me</a
         >
       </div>
+
+      <!-- menu icon-->
+      <i class="fa-solid fa-bars text-2xl hidden"></i>
     </header>
 
     <!-- ================ -->
     <!-- ABOUT ME SECTION -->
     <section id="about">
-      <div class="">
-        <div class="">
-          <div class="">
-            <img src="/images//ABolaji-img.png" alt="abolaji-img" />
-          </div>
+      <div
+        class="flex flex-row items-center mt-40 justify-center text-left m-20"
+      >
+        <div
+          class="bg-mySecColor object-cover border-8 left-10 shadow-lg shadow-blue-500/30 w-2/3"
+        >
+          <img src="/images//ABolaji-img.png" alt="abolaji-img" />
         </div>
 
-        <div class="">
-          <div class="">
-            <h3>ABOUT ME</h3>
-            <h1>Frontend Engineer</h1>
-            <p>
-              I'm Alfred, a passionate Software Engineer with a strong affinity
-              for problem-solving, team building, and developing innovative
-              organizational products with my technical expertise. I have a
-              profound love for learning, and I am driven by making a positive
-              impact while valuing constructive feedback.
-            </p>
+        <div class="pl-14">
+          <h3 class="pt-5 text-3xl font-bold text-hoverColor">ABOUT ME</h3>
+          <h1 class="pb-6 font-light">Frontend Engineer</h1>
+          <p class="pb-6">
+            I'm passionate Software Engineer with a strong affinity for
+            problem-solving, team building, and developing innovative
+            organizational products with my technical expertise. I have a
+            profound love for learning, and I am driven by making a positive
+            impact while valuing constructive feedback.
+          </p>
 
-            <p>
-              My journey in the tech industry began with BookMyEvent, where I
-              contributed to the development of an Online Booking System aimed
-              at simplifying reservation management for businesses. As part of a
-              ten-member team, I played a key role in crafting the frontend of
-              the project.
-            </p>
+          <p class="pb-6">
+            My journey in the tech industry began with BookMyEvent, where I
+            contributed to the development of an Online Booking System aimed at
+            simplifying reservation management for businesses. As part of a
+            ten-member team, I played a key role in crafting the frontend of the
+            project.
+          </p>
 
-            <p>
-              Specializing in Frontend Design and Web development, I thrive in
-              collaborative environments, effectively working with fellow team
-              members through pull requests repository. My ability to bring
-              ideas to life through captivating web designs has been honed
-              through my extensive experience in Frontend Development.
-            </p>
+          <p class="pb-6">
+            Specializing in Frontend Design and Web development, I thrive in
+            collaborative environments, effectively working with fellow team
+            members through pull requests repository. My ability to bring ideas
+            to life through captivating web designs has been honed through my
+            extensive experience in Frontend Development.
+          </p>
 
-            <p>
-              I've dedicated significant time to enriching online ecommerce
-              platforms for VIVBAG, Sneakers Store, and FreshPicks Farms.
-              Additionally, I had the rewarding opportunity to work on an
-              investment platform at Ardilla Investment, empowering individuals
-              to achieve their financial goals through smart savings and
-              investments.
-            </p>
+          <p class="pb-6">
+            I've dedicated significant time to enriching online ecommerce
+            platforms for VIVBAG, Sneakers Store, and FreshPicks Farms.
+            Additionally, I had the rewarding opportunity to work on an
+            investment platform at Ardilla Investment, empowering individuals to
+            achieve their financial goals through smart savings and investments.
+          </p>
 
-            <p>
-              As an avid seeker of knowledge and personal growth, I am
-              continuously investing time in learning and developing solutions
-              for real-life challenges. Beyond my professional pursuits, my
-              personal interests span across various domains, including business
-              and technology, farming, music, soccer/football, and research.
-            </p>
+          <p class="pb-6">
+            As an avid seeker of knowledge and personal growth, I am
+            continuously investing time in learning and developing solutions for
+            real-life challenges. Beyond my professional pursuits, my personal
+            interests span across various domains, including business and
+            technology, farming, music, soccer/football, and research.
+          </p>
 
-            <p>
-              Thank you for visiting my page, and I look forward to exploring
-              exciting opportunities where I can apply my skills and passions to
-              make a meaningful impact to your project.
-            </p>
+          <p class="pb-6">
+            Thank you for visiting my page, and I look forward to exploring
+            exciting opportunities where I can apply my skills and passions to
+            make a meaningful impact to your project.
+          </p>
 
-            <div>
-              <a
-                href="https://api.whatsapp.com/send/?phone=2348104244450"
-                target="_blank"
-                >Reach Me</a
-              >
-            </div>
+          <div
+            class="text-1xl left-10 shadow-lg shadow-blue-500/30 animate-pulse w-36 text-center bg-hoverColor py-3 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
+          >
+            <a
+              href="https://api.whatsapp.com/send/?phone=2348104244450"
+              target="_blank"
+              >Reach Me</a
+            >
           </div>
         </div>
       </div>
@@ -136,70 +176,100 @@
     <!-- ================ -->
     <!-- FOOTER SECTION-->
 
-    <footer>
-      <div class="">
-        <h2><i class="fa-solid fa-clone"></i>Fred<span>Code</span></h2>
-      </div>
-
-      <div class="">
-        <h2>About</h2>
-        <p>
-          I'm Alfred, a passionate Software Engineer with a strong affinity for
-          problem-solving, team building, and developing innovative
-          organizational products with my technical expertise.
-        </p>
-      </div>
-
-      <!-- Middle footer -->
-      <div class="">
-        <h2>Newsletter</h2>
-        <p>Stay updated with my latest trends</p>
-        <input type="email" id="email" placeholder="Enter Email Address" /><span
-          ><i class="fa-solid fa-arrow-right"></i
-        ></span>
-      </div>
-
-      <!-- Left footer -->
-      <div class="">
-        <h3>Follow Me</h3>
-        <p>Let us be social</p>
-        <!-- socials -->
-        <div class="social-media">
-          <a href="https://github.com/bant095" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-
+    <footer class="m-20 border-t-2 text-gray-400 border-gray-400">
+      <div class="flex flex-row justify-between gap-32 w-5/6 mt-8">
         <div class="">
-          <a href="abolajiayodeji2@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+          <h2 class="pb-3 font-semibold text-white">
+            <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
+              >Code</span
+            >
+          </h2>
+          <div class="">
+            <h2 class="text-xl pb-1 font-semibold">About</h2>
+            <p class="w-80 font-light">
+              I'm passionate Software Engineer with a strong affinity for
+              problem-solving, team building, and developing innovative
+              organizational products with my technical expertise.
+            </p>
+          </div>
         </div>
 
-        <div class="social-media">
-          <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+        <!-- Middle footer -->
+        <div class="w-full">
+          <h2 class="pb-3 font-semibold text-white">Newsletter</h2>
+          <p class="font-light">Stay updated with my latest trends</p>
+          <input
+            class="w-80 p-2 mt-4 text-myback"
+            type="email"
+            id="email"
+            placeholder="Enter Email Address"
+          />
+          <i
+            class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+          ></i>
         </div>
 
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-        </div>
+        <!-- Left footer -->
+        <div class="w-3/4/5 ml-8">
+          <h3 class="pb-3 font-semibold text-white">Follow Me</h3>
+          <p class="font-light">Let us be social</p>
+          <!-- socials -->
+          <div class="flex flex-row gap-4 text-xl pt-3">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="https://github.com/bant095" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
 
-        <div class="">
-          <a href="https://hashnode.com/@Alfred08" target="_blank"
-            ><i class="fa-brands fa-hashnode"></i
-          ></a>
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="abolajiayodeji2@gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a
+                href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="https://hashnode.com/@Alfred08" target="_blank"
+                ><i class="fa-brands fa-hashnode"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- down center -->
-      <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
-      <small>Developed By @FredCode🤩</small>
+      <div class="text-center mt-16">
+        <div
+          class="z-10 absolute left-10 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
+        >
+          <a href="./about.html"><i class="fa-solid fa-arrow-up sticky"></i></a>
+        </div>
+        <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
+        <small class="font-light">Developed By @FredCode🤩</small>
+      </div>
     </footer>
   </body>
 </html>

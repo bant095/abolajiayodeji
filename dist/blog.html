@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ABOLAJI AYODEJI PORTFOLIO WEBSITE | BLOG</title>
     <script>
@@ -24,116 +28,241 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              myBack: "0F172A",
-              mySecColor: "1E293B",
-              hoverColor: "38BDF8",
+              myback: "#0F172A",
+              mySecColor: "#1E293B",
+              hoverColor: "#38BDF8",
+            },
+            fontFamily: {
+              body: ["Lato", "sans-serif"],
             },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-myback">
+  <body class="font-body bg-myback text-white">
     <!-- =============== -->
     <!-- Nav bar -->
-    <header class="bg-cyan-100 text-black-50 flex flex-row">
-      <div class="">
-        <h2><i class="fa-solid fa-clone"></i>Fred<span>Code</span></h2>
+    <header
+      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14"
+    >
+      <div class="text-xl pt-2 font-bold cursor-pointer">
+        <h2>
+          <i class="fa-solid fa-clone ml-4 pr-3 text-hoverColor"></i>
+          Fred<span class="font-normal">Code</span>
+        </h2>
       </div>
-      <!-- menu icon-->
-      <i class="fa-solid fa-bars"></i>
 
       <!-- menu list -->
-      <ul class="flex flex-row bg-slate-700">
-        <li><a class="home" href="./index.html">Home</a></li>
-        <li><a href="#services">My Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+      <ul class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./index.html">Home</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#services">My Services</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#projects">Projects</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./about.html" target="_blank">About</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./blog.html" target="_blank">Blog</a>
+        </li>
+        <li
+          class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
 
-      <div class="">
-        <a href="./Images/Ayodeji Abolaji Resume.pdf" target="_blank"
+      <div
+        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
+      >
+        <a href="../Images/Ayodeji Abolaji Resume.pdf" target="_blank"
           >Employ Me</a
         >
       </div>
+
+      <!-- menu icon-->
+      <i class="fa-solid fa-bars text-2xl hidden"></i>
     </header>
 
     <!-- ============= -->
     <!-- BLOG -->
 
-    <section id="blog">
-      <h2>Blog</h2>
+    <section id="blog" >
+      <h2 class="absolute top-0">Blog</h2>
+      <div class="">
+        <img src="../Images/Main.jpg" alt="Image" class="">
+        <div class="absolute top-40 left-0 bottom-0 right-0 text-center">
+          <div class="">
+              <h2 class="">Welcome to my Blog</h2>
+              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo et, sunt eum ut, laborum similique, optio tempore quas reiciendis itaque necessitatibus alias quos nesciunt consectetur maxime sequi aliquid natus?</p>
+          </div>
+      </div>
+    </div>
+
+    <section class="">
+        <div class="">
+             <!-- ============== -->
+                  <!-- Container -->
+            <div class="">
+               <!-- BOX 1 -->
+                <div class="">
+                    <div class="">
+                        <img src="../Images/pexels-hitesh-choudhary-879109.jpg" alt="Image" class="">
+                        <h4 class="">Lorem ipsum dolor #1</h4>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus harum quia laudantium libero alias mollitia quibusdam quo quam veniam?</p>
+                        <a href="#" class="">Read More</a>    
+                    </div>  
+                </div>
+
+                <!-- BOX 2 -->
+                <div class="">
+                    <div class="">
+                        <img src="../Images/pexels-kevin-ku-577585.jpg" alt="Image" class="">
+                        <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #2</h4>
+                        <p class="tm-margin-b-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque harum ab aperiam voluptate rerum dicta earum sequi, laborum cumque unde?</p>
+                        <a href="#" class="tm-btn text-uppercase">Read More</a>    
+                    </div>  
+
+                </div>
+
+                <!-- BOX 3 -->
+                <div class="">
+                    <div class="">
+                        <img src="../Images/pexels-thisisengineering-3861959.jpg" alt="Image" class="">
+                        <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #3</h4>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates hic iure reiciendis officiis natus dolorem odit rerum aspernatur eveniet id.</p>
+                        <a href="#" class="">Read More</a>    
+                    </div>  
+
+                </div>
+
+                <!-- BOX 4 -->
+                <div class="">
+                    <div class="">
+                        <img src="../Images/pexels-neo-2653362.jpg" alt="Image" class="">
+                        <h4 class="">Lorem ipsum dolor #4</h4>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam atque dolor ratione recusandae quo consequuntur est, inventore impedit cum?</p>
+                        <a href="#" class="">Read More</a>    
+                    </div>  
+                </div>
+            </div> 
+
+
+            
     </section>
 
     <!-- ================ -->
-    <!-- FOOTER SECTION-->
+    <!-- FOOTER sectSECTION-->
 
-    <footer>
-      <div class="">
-        <h2><i class="fa-solid fa-clone"></i>Fred<span>Code</span></h2>
-      </div>
-
-      <div class="">
-        <h2>About</h2>
-        <p>
-          I'm Alfred, a passionate Software Engineer with a strong affinity for
-          problem-solving, team building, and developing innovative
-          organizational products with my technical expertise.
-        </p>
-      </div>
-
-      <!-- Middle footer -->
-      <div class="">
-        <h2>Newsletter</h2>
-        <p>Stay updated with my latest trends</p>
-        <input type="email" id="email" placeholder="Enter Email Address" /><span
-          ><i class="fa-solid fa-arrow-right"></i
-        ></span>
-      </div>
-
-      <!-- Left footer -->
-      <div class="">
-        <h3>Follow Me</h3>
-        <p>Let us be social</p>
-        <!-- socials -->
-        <div class="social-media">
-          <a href="https://github.com/bant095" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-
+    <footer class="m-20 border-t-2 text-gray-400 border-gray-400">
+      <div class="flex flex-row justify-between gap-32 w-5/6 mt-8">
         <div class="">
-          <a href="abolajiayodeji2@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+          <h2 class="pb-3 font-semibold text-white">
+            <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
+              >Code</span
+            >
+          </h2>
+          <div class="">
+            <h2 class="text-xl pb-1 font-semibold">About</h2>
+            <p class="w-80 font-light">
+              I'm Alfred, a passionate Software Engineer with a strong affinity
+              for problem-solving, team building, and developing innovative
+              organizational products with my technical expertise.
+            </p>
+          </div>
         </div>
 
-        <div class="social-media">
-          <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+        <!-- Middle footer -->
+        <div class="w-full">
+          <h2 class="pb-3 font-semibold text-white">Newsletter</h2>
+          <p class="font-light">Stay updated with my latest trends</p>
+          <input
+            class="w-80 p-2 mt-4 text-myback"
+            type="email"
+            id="email"
+            placeholder="Enter Email Address"
+          />
+          <i
+            class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+          ></i>
         </div>
 
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-        </div>
+        <!-- Left footer -->
+        <div class="w-3/4/5 ml-8">
+          <h3 class="pb-3 font-semibold text-white">Follow Me</h3>
+          <p class="font-light">Let us be social</p>
+          <!-- socials -->
+          <div class="flex flex-row gap-4 text-xl pt-3">
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="https://github.com/bant095" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
 
-        <div class="">
-          <a href="https://hashnode.com/@Alfred08" target="_blank"
-            ><i class="fa-brands fa-hashnode"></i
-          ></a>
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="abolajiayodeji2@gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a
+                href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+
+            <div
+              class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
+            >
+              <a href="https://hashnode.com/@Alfred08" target="_blank"
+                ><i class="fa-brands fa-hashnode"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- down center -->
-      <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
-      <small>Developed By @FredCode🤩</small>
+      <div class="text-center mt-16">
+        <div
+          class="z-10 absolute left-10 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
+        >
+          <a href="./index.html"><i class="fa-solid fa-arrow-up sticky"></i></a>
+        </div>
+        <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
+        <small class="font-light">Developed By @FredCode🤩</small>
+      </div>
     </footer>
   </body>
 </html>
