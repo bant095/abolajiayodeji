@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,16 +45,12 @@
       };
     </script>
   </head>
-  <body
-    id="home"
-    class="font-body bg-myback text-white scroll-smooth hover:scroll-auto"
-  >
-    <!-- bg-gradient-to-br from-mySecColor from-10% via-myback via-20% to-myback to-90% -->
+  <body id="home" class="font-body bg-myback text-white">
     <!-- =============== -->
     <!-- Nav bar -->
     <header
       id="navbar"
-      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14"
+      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14 lg:w-8/12"
     >
       <div class="text-xl pt-2 font-bold cursor-pointer">
         <h2>
@@ -64,7 +60,9 @@
       </div>
 
       <!-- menu list -->
-      <ul class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+      <ul
+        class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold lg:hidden"
+      >
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
@@ -106,7 +104,7 @@
       </div>
 
       <!-- menu icon-->
-      <i class="fa-solid fa-bars text-2xl hidden"></i>
+      <i class="fa-solid fa-bars text-2xl hidden lg:block lg:pr-60"></i>
     </header>
 
     <!-- ================ -->
@@ -135,7 +133,7 @@
 
       <!--hero-section-right-->
       <div
-        class="bg-mySecColor object-cover mt-24 border-8 left-10 shadow-lg shadow-blue-500/30 w-3/6 ml-20"
+        class="bg-mySecColor object-contain mt-24 border-8 left-10 shadow-lg shadow-blue-500/30 w-3/6 ml-20"
       >
         <img src="../Images/ABolaji-img.png" alt="abolaji-image" />
       </div>
@@ -244,7 +242,7 @@
           MY SKILLS
         </h1>
         <ul
-          class="flex flex-row items-center text-center justify-center gap-16 text-2xl animate-out slide-out-to-top slide-out-to-left"
+          class="flex flex-row items-center text-center justify-center gap-16 text-2xl"
         >
           <li class="">
             <i class="fa-brands fa-html5 fa-2x"></i>
@@ -543,28 +541,28 @@
       <h2 class="mb-10 pt-10 mt-44 text-center text-3xl font-bold">CONTACT</h2>
       <form action="" class="m-6 flex flex-col items-center justify-center">
         <input
-          class="w-3/5 m-6 p-2 text-myback rounded-md"
+          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
           type="text"
           name="text"
           placeholder="Enter Your Name"
           required
         />
         <input
-          class="w-3/5 m-6 p-2 text-myback rounded-md"
+          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
           type="email"
           name="email"
           placeholder="Enter Your Email"
           required
         />
         <input
-          class="w-3/5 m-6 p-2 text-myback rounded-md"
+          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
           type="text"
           name="text"
           placeholder="Subject"
           required
         />
         <textarea
-          class="w-3/5 m-6 p-2 text-myback rounded-md"
+          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
           name="text"
           id=""
           placeholder="Message"
@@ -608,9 +606,11 @@
             id="email"
             placeholder="Enter Email Address"
           />
-          <i
-            class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
-          ></i>
+          <span
+            ><i
+              class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+            ></i
+          ></span>
         </div>
 
         <!-- Left footer -->
@@ -669,12 +669,11 @@
         <div
           class="z-10 absolute left-10 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
         >
-          <a href="./index.html"><i class="fa-solid fa-arrow-up sticky"></i></a>
+          <a href="#home"><i class="fa-solid fa-arrow-up sticky"></i></a>
         </div>
         <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
         <small class="font-light">Developed By @FredCode🤩</small>
       </div>
     </footer>
-    <script src="main.js"></script>
   </body>
 </html>
