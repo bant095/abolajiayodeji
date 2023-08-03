@@ -49,7 +49,8 @@
     <!-- =============== -->
     <!-- Nav bar -->
     <header
-      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14"
+      id="navbar"
+      class="bg-myback fixed shadow-lg top-0 text-white flex drop-shadow-xl justify-between items-center w-full py-5 border-b-2 border-b-slate-700 z-10 px-14 md:w-full"
     >
       <div class="text-xl pt-2 font-bold cursor-pointer">
         <h2>
@@ -59,7 +60,7 @@
       </div>
 
       <!-- menu list -->
-      <ul class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+      <ul class="hidden lg:flex gap-9 text-1xl font-semibold">
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
@@ -78,12 +79,12 @@
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
-          <a href="./about.html" target="_blank">About</a>
+          <a href="./dist/about.html" target="_blank">About</a>
         </li>
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
-          <a href="./blog.html" target="_blank">Blog</a>
+          <a href="./dist/blog.html" target="_blank">Blog</a>
         </li>
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
@@ -93,7 +94,7 @@
       </ul>
 
       <div
-        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
+        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold hidden lg:flex"
       >
         <a href="../Images/Ayodeji Abolaji Resume.pdf" target="_blank"
           >Employ Me</a
@@ -101,14 +102,14 @@
       </div>
 
       <!-- menu icon-->
-      <i class="fa-solid fa-bars text-2xl hidden"></i>
+      <i class="fa-solid fa-bars text-2xl lg:hidden"></i>
     </header>
 
     <!-- ================ -->
     <!-- ABOUT ME SECTION -->
     <section id="about">
       <div
-        class="flex flex-row items-center mt-40 justify-center text-left m-20"
+        class="flex lg:flex-row flex-col items-center mt-40 justify-center m-20"
       >
         <div
           class="bg-mySecColor object-cover border-8 left-10 shadow-lg shadow-blue-500/30 w-2/3"
@@ -116,7 +117,7 @@
           <img src="/images/ABolaji-img.png" alt="abolaji-img" />
         </div>
 
-        <div class="pl-14">
+        <div class="pl-14 flex flex-col justify-center">
           <h3 class="pt-5 text-3xl font-bold text-hoverColor">ABOUT ME</h3>
           <h1 class="pb-6 font-light">Frontend Engineer</h1>
           <p class="pb-6">
@@ -181,45 +182,51 @@
     <!-- ================ -->
     <!-- FOOTER SECTION-->
 
-    <footer class="m-20 border-t-2 text-gray-400 border-gray-400">
-      <div class="flex flex-row justify-between gap-32 w-5/6 mt-8">
-        <div class="">
-          <h2 class="pb-3 font-semibold text-white">
-            <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
-              >Code</span
-            >
-          </h2>
-          <div class="">
-            <h2 class="text-xl pb-1 font-semibold">About</h2>
-            <p class="w-80 font-light">
-              I'm passionate Software Engineer with a strong affinity for
-              problem-solving, team building, and developing innovative
-              organizational products with my technical expertise.
-            </p>
-          </div>
+    <footer
+      class="p-5 lg:px-[100px] px-10 border-t-2 text-gray-400 border-gray-400"
+    >
+      <h2 class="pb-3 font-semibold text-white">
+        <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
+          >Code</span
+        >
+      </h2>
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between justify-center gap-[50px] lg:gap-[100px] item-center"
+      >
+        <div class="w-80">
+          <h2 class="text-xl font-semibold">About</h2>
+          <p class="font-light">
+            I'm passionate Software Engineer with a strong affinity for
+            problem-solving, team building, and developing innovative
+            organizational products with my technical expertise.
+          </p>
         </div>
 
         <!-- Middle footer -->
-        <div class="w-full">
-          <h2 class="pb-3 font-semibold text-white">Newsletter</h2>
+        <div class="w-80">
+          <h2 class="font-semibold text-white">Newsletter</h2>
           <p class="font-light">Stay updated with my latest trends</p>
-          <input
-            class="w-80 p-2 mt-4 text-myback"
-            type="email"
-            id="email"
-            placeholder="Enter Email Address"
-          />
-          <i
-            class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
-          ></i>
+          <div class="flex">
+            <input
+              class="text-myback w-80"
+              type="email"
+              id="email"
+              placeholder="Enter Email Address"
+            />
+            <span
+              ><i
+                class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+              ></i
+            ></span>
+          </div>
         </div>
 
         <!-- Left footer -->
-        <div class="w-3/4/5 ml-8">
-          <h3 class="pb-3 font-semibold text-white">Follow Me</h3>
+        <div class="w-80">
+          <h3 class="font-semibold text-white">Follow Me</h3>
           <p class="font-light">Let us be social</p>
           <!-- socials -->
-          <div class="flex flex-row gap-4 text-xl pt-3">
+          <div class="flex flex-row gap-4 text-xl">
             <div
               class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
             >
@@ -270,7 +277,7 @@
         <div
           class="z-10 absolute left-10 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
         >
-          <a href="./about.html"><i class="fa-solid fa-arrow-up sticky"></i></a>
+          <a href="#home"><i class="fa-solid fa-arrow-up sticky"></i></a>
         </div>
         <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
         <small class="font-light">Developed By @FredCode🤩</small>

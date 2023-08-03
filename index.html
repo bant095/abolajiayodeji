@@ -45,12 +45,12 @@
       };
     </script>
   </head>
-  <body id="home" class="font-body bg-myback text-white min-h-screen">
+  <body id="home" class="font-body bg-myback text-white">
     <!-- =============== -->
     <!-- Nav bar -->
     <header
       id="navbar"
-      class="bg-myback fixed shadow-lg top-0 text-white flex lg:flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14 flex-col md:w-full"
+      class="bg-myback fixed shadow-lg top-0 text-white flex drop-shadow-xl justify-between items-center w-full py-5 border-b-2 border-b-slate-700 z-10 px-14 md:w-full"
     >
       <div class="text-xl pt-2 font-bold cursor-pointer">
         <h2>
@@ -60,7 +60,7 @@
       </div>
 
       <!-- menu list -->
-      <ul class="lg:flex lg:flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+      <ul class="hidden lg:flex gap-9 text-1xl font-semibold">
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
@@ -94,7 +94,7 @@
       </ul>
 
       <div
-        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
+        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold hidden lg:flex"
       >
         <a href="../Images/Ayodeji Abolaji Resume.pdf" target="_blank"
           >Employ Me</a
@@ -102,22 +102,22 @@
       </div>
 
       <!-- menu icon-->
-      <i class="fa-solid fa-bars text-2xl hidden"></i>
+      <i class="fa-solid fa-bars text-2xl lg:hidden"></i>
     </header>
 
     <!-- ================ -->
     <!-- The Hero Section - Container -->
 
     <!--hero-section-left-->
-    <section class="max-w-screen-lg m-20 flex left-0 top-40 flex-row">
-      <div class="w-4/5 pt-20 mt-16 pr-20">
-        <h3 class="text-2xl pb-6 fw">Hello! I'm</h3>
-        <h1 class="text-5xl pb-6 font-extrabold">ABOLAJI ALFRED</h1>
-        <p class="text-1xl pb-6 leading-8">
-          I am driven by a fervent enthusiasm for creating pioneering and
-          intuitive software applications that cater to user needs.
-        </p>
-
+    <section
+      class="lg:px-20 px-2 lg:mt-[200px] mt-[100px] gap-7 justify-center flex flex-col-reverse lg:flex-row lg:justify-between items-center"
+    >
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-2xl">Hello! I'm</h3>
+          <h1 class="text-4xl font-extrabold">ABOLAJI ALFRED</h1>
+          <p class="text-3xl leading-8">I am Frontend Engineer and Designer</p>
+        </div>
         <div
           class="text-1xl left-10 shadow-lg shadow-blue-500/30 animate-pulse w-36 text-center bg-hoverColor py-3 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
         >
@@ -130,60 +130,57 @@
       </div>
 
       <!--hero-section-right-->
-      <div
-        class="bg-mySecColor object-contain mt-24 border-8 left-10 shadow-lg shadow-blue-500/30 w-3/6 ml-20 object-center object-cover"
-      >
-        <img
-          src="../Images/ABolaji-img.png"
-          alt="abolaji-image"
-          class="sm:object-center sm:object-cover"
-        />
+      <div class="flex gap-7 shadow-lg justify-center items-center">
+        <div class="border-8 shadow-lg shadow-blue-500/30">
+          <img src="../Images/ABolaji-img.png" alt="abolaji-image" class="" />
+        </div>
+
+        <div class="text-2xl">
+          <div
+            class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
+          >
+            <a href="https://github.com/bant095" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+
+          <div
+            class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
+          >
+            <a href="abolajiayodeji2@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+
+          <div
+            class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
+          >
+            <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+
+          <div
+            class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
+          >
+            <a
+              href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+
+          <div
+            class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
+          >
+            <a href="https://hashnode.com/@Alfred08" target="_blank"
+              ><i class="fa-brands fa-hashnode"></i
+            ></a>
+          </div>
+        </div>
       </div>
 
       <!--social-media-icon-->
-      <div class="mt-36 ml-16 text-2xl animate-bounce w-6 h-6">
-        <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-        >
-          <a href="https://github.com/bant095" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-
-        <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-        >
-          <a href="abolajiayodeji2@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </div>
-
-        <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-        >
-          <a href="https://twitter.com/Abolaji_Alfred" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </div>
-
-        <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-        >
-          <a
-            href="https://www.linkedin.com/in/abolaji-alfred-ayodeji/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-        </div>
-
-        <div
-          class="bg-hoverColor w-12 h-12 object-cover mb-5 p-3 rounded-full hover:bg-slate-400 transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-        >
-          <a href="https://hashnode.com/@Alfred08" target="_blank"
-            ><i class="fa-brands fa-hashnode"></i
-          ></a>
-        </div>
-      </div>
     </section>
 
     <!-- ================ -->
@@ -194,7 +191,7 @@
       </h1>
 
       <div
-        class="flex flex-row max-w-screen-lg mx-28 items-center text-center justify-center"
+        class="flex flex-col lg:flex-row max-w-screen-lg lg:mx-28 mx-5 items-center text-center justify-center"
       >
         <div class="text-center w-3/5 items-center">
           <i class="fa-solid fa-pen-nib fa-2x pb-6 text-hoverColor"></i>
@@ -239,42 +236,54 @@
     <!-- ================ -->
     <!-- MY SKILL SECTION -->
     <section class="max-w-screen-lg m-20 mb-32 text-center">
-      <div class="">
+      <div>
         <h1 class="m-10 pt-10 mb-20 mt-20 text-center text-3xl font-bold">
           MY SKILLS
         </h1>
         <ul
-          class="flex flex-row items-center text-center justify-center gap-16 text-2xl animate-bounce"
+          class="flex flex-wrap items-center text-center justify-center gap-16 text-2xl animate-bounce"
         >
-          <li class="">
+          <li>
             <i class="fa-brands fa-html5 fa-2x"></i>
-            HTML
+            <p>HTML</p>
           </li>
-          <li><i class="fa-brands fa-css3-alt fa-2x"></i> CSS</li>
-          <li><i class="fa-brands fa-js fa-2x"></i> JavaScript</li>
-          <li><i class="fa-brands fa-git-alt fa-2x"></i> Git</li>
+          <li>
+            <i class="fa-brands fa-css3-alt fa-2x"></i>
+            <p>CSS</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-js fa-2x"></i>
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-git-alt fa-2x"></i>
+            <p>Git</p>
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- ================== -->
     <!-- PROJECT SECTION -->
-    <section id="projects" class="max-w-screen-lg m-20 text-center">
-      <h1 class="mb-32 pt-10 mt-44 text-center text-3xl font-bold">PROJECTS</h1>
+    <section
+      id="projects"
+      class="text-center flex flex-col lg:gap-[100px] lg:px-20 gap-[50px] px-10"
+    >
+      <h1 class="lg:mt-30 mt-10 text-center text-3xl font-bold">PROJECTS</h1>
       <!-- boxes -->
-      <div class="">
+      <div class="flex flex-col lg:gap-[100px] gap-[50px]">
         <!-- box 1 -->
-        <div class="flex flex-row justify-center text-left mb-32">
+        <div class="flex flex-col lg:flex-row justify-center text-left">
           <!-- image -->
           <div
-            class="transition duration-300 ease-in-out hover:scale-110 w-max shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
+            class="transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
           >
             <a href="https://bagsecommercepage.netlify.app/" target="_blank"
               ><img src="../Images/box1.JPG" alt="VIVBAG"
             /></a>
           </div>
           <!-- content -->
-          <div class="bg-mySecColor h-56 items-center mt-7 p-12">
+          <div class="bg-mySecColor lg:h-56 items-center lg:mt-7 p-12">
             <h2 class="text-1xl font-bold pb-5 text-hoverColor">VIVBAG</h2>
             <p>
               VIVBAG is a Fashion Bag Company that Unleash Your Style with
@@ -297,17 +306,19 @@
         </div>
 
         <!-- box 2 -->
-        <div class="flex flex-row-reverse justify-center text-left mb-32">
+        <div
+          class="flex flex-col lg:flex-row-reverse justify-center items-center text-left"
+        >
           <!-- image -->
           <div
-            class="transition duration-300 ease-in-out hover:scale-110 w-max shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
+            class="transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
           >
             <a href="https://ardillawebpage.netlify.app/" target="_blank"
               ><img src="../Images/box2.JPG" alt="ardilla web"
             /></a>
           </div>
           <!-- content -->
-          <div class="bg-mySecColor h-56 items-center mt-7 p-12">
+          <div class="bg-mySecColor h-56 items-center p-12">
             <h2 class="text-1xl font-bold pb-5 text-hoverColor">
               Ardilla Invest
             </h2>
@@ -332,10 +343,12 @@
         </div>
 
         <!-- box 3 -->
-        <div class="flex flex-row justify-center text-left mb-32">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center text-left"
+        >
           <!-- image -->
           <div
-            class="transition duration-300 ease-in-out hover:scale-110 w-max shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
+            class="transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
           >
             <a
               href="https://fruitsandvegetableswebsite.netlify.app/"
@@ -344,7 +357,7 @@
             /></a>
           </div>
           <!-- content -->
-          <div class="bg-mySecColor h-56 items-center mt-7 p-12">
+          <div class="bg-mySecColor h-56 items-center p-12">
             <h2 class="text-1xl font-bold pb-5 text-hoverColor">
               FreshPicks Farms
             </h2>
@@ -369,17 +382,19 @@
         </div>
 
         <!-- box 4 -->
-        <div class="flex flex-row-reverse justify-center text-left mb-32">
+        <div
+          class="flex flex-col lg:flex-row-reverse justify-center items-center text-left"
+        >
           <!-- image -->
           <div
-            class="transition duration-300 ease-in-out hover:scale-110 w-max shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
+            class="transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
           >
             <a href="https://sneakersstoreweb.netlify.app/" target="_blank"
               ><img src="../Images/box4.JPG" alt="VIVBAG"
             /></a>
           </div>
           <!-- content -->
-          <div class="bg-mySecColor h-56 items-center mt-7 p-12">
+          <div class="bg-mySecColor h-56 items-center p-12">
             <h2 class="text-1xl font-bold pb-5 text-hoverColor">
               Sneakers Store
             </h2>
@@ -403,17 +418,19 @@
         </div>
 
         <!-- box 5 -->
-        <div class="flex flex-row justify-center text-left mb-24">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center text-left"
+        >
           <!-- image -->
           <div
-            class="transition duration-300 ease-in-out hover:scale-110 w-max shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
+            class="transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-blue-500/50 border-4 border-neutral-50"
           >
             <a href="https://fyloproduct.netlify.app/" target="_blank"
               ><img src="../Images/box5.JPG" alt="VIVBAG"
             /></a>
           </div>
           <!-- content -->
-          <div class="bg-mySecColor h-56 items-center mt-7 p-12">
+          <div class="bg-mySecColor h-56 items-center p-12">
             <h2 class="text-1xl font-bold pb-5 text-hoverColor">Fylo stores</h2>
             <p>
               Fylo stores your most important files in one secure location.
@@ -435,16 +452,17 @@
           </div>
         </div>
       </div>
+
       <!-- Next and Prev button -->
-      <div class="text-6xl">
-        <a href="" class="pr-24"
+      <div class="text-6xl flex gap-6 justify-center items-center">
+        <a href="" class=""
           ><i
-            class="fa-solid fa-left-long hover:text-hoverColor mr-4 transition duration-300 ease-in-out hover:scale-110"
+            class="fa-solid fa-left-long hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
           ></i
         ></a>
-        <a href="" class="pl-24"
+        <a href="" class=""
           ><i
-            class="fa-solid fa-right-long hover:text-hoverColor mr-4 transition duration-300 ease-in-out hover:scale-110"
+            class="fa-solid fa-right-long hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
           ></i
         ></a>
       </div>
@@ -452,12 +470,13 @@
 
     <!-- =================== -->
     <!-- Testmonial -->
-    <section class="m-20 text-center" id="">
-      <h2 class="mb-32 pt-10 mt-44 text-center text-3xl font-bold">
-        TESTIMONALS
-      </h2>
+    <section
+      class="text-center lg:px-[100px] px-10 flex flex-col lg:gap-[60px] gap-[30px]"
+      id=""
+    >
+      <h2 class="lg:mt-44 mt-20 text-center text-3xl font-bold">TESTIMONALS</h2>
       <!-- Testmonial Contents -->
-      <div class="flex flex-row gap-14">
+      <div class="flex lg:flex-row flex-col lg:gap-14 gap-6">
         <!-- Testmonial 1 -->
         <div
           class="transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30 bg-mySecColor text-white w-4000 rounded-lg drop-shadow-lg border-slate-500 border-2 p-5 cursor-pointer"
@@ -539,32 +558,32 @@
 
     <!-- ============== -->
     <!-- Contact Me -->
-    <section id="contact" class="max-w-screen-lg m-20 text-center">
-      <h2 class="mb-10 pt-10 mt-44 text-center text-3xl font-bold">CONTACT</h2>
-      <form action="" class="m-6 flex flex-col items-center justify-center">
+    <section id="contact" class="flex flex-col lg:gap-10 gap-5 text-center">
+      <h2 class="lg:mt-44 mt-20 text-center text-3xl font-bold">CONTACT</h2>
+      <form action="" class="flex flex-col gap-4 items-center justify-center">
         <input
-          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
+          class="lg:w-3/5 w-4/5 p-2 text-myback rounded-md caret-hoverColor"
           type="text"
           name="text"
           placeholder="Enter Your Name"
           required
         />
         <input
-          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
+          class="lg:w-3/5 w-4/5 p-2 text-myback rounded-md caret-hoverColor"
           type="email"
           name="email"
           placeholder="Enter Your Email"
           required
         />
         <input
-          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
+          class="lg:w-3/5 w-4/5 p-2 text-myback rounded-md caret-hoverColor"
           type="text"
           name="text"
           placeholder="Subject"
           required
         />
         <textarea
-          class="w-3/5 m-6 p-2 text-myback rounded-md caret-hoverColor"
+          class="lg:w-3/5 w-4/5 p-8 text-myback rounded-md caret-hoverColor"
           name="text"
           id=""
           placeholder="Message"
@@ -572,7 +591,7 @@
         <input
           type="submit"
           value="Submit"
-          class="w-3/5 m-3 p-3 mb-24 text-1xl bg-hoverColor cursor-pointer left-10 shadow-lg shadow-blue-500/30 rounded-md hover:bg-slate-400 mr-4 font-semibold"
+          class="lg:w-3/5 w-4/5 m-3 p-3 mb-24 text-1xl bg-hoverColor cursor-pointer left-10 shadow-lg shadow-blue-500/30 rounded-md hover:bg-slate-400 mr-4 font-semibold"
         />
       </form>
     </section>
@@ -580,47 +599,51 @@
     <!-- ================ -->
     <!-- FOOTER sectSECTION-->
 
-    <footer class="m-20 border-t-2 text-gray-400 border-gray-400">
-      <div class="flex flex-row justify-between gap-32 w-5/6 mt-8">
-        <div class="">
-          <h2 class="pb-3 font-semibold text-white">
-            <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
-              >Code</span
-            >
-          </h2>
-          <div class="verscroll-contain">
-            <h2 class="text-xl pb-1 font-semibold">About</h2>
-            <p class="w-80 font-light">
-              I'm passionate Software Engineer with a strong affinity for
-              problem-solving, team building, and developing innovative
-              organizational products with my technical expertise.
-            </p>
-          </div>
+    <footer
+      class="p-5 lg:px-[100px] px-10 border-t-2 text-gray-400 border-gray-400"
+    >
+      <h2 class="pb-3 font-semibold text-white">
+        <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
+          >Code</span
+        >
+      </h2>
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between justify-center gap-[50px] lg:gap-[100px] item-center"
+      >
+        <div class="w-80">
+          <h2 class="text-xl font-semibold">About</h2>
+          <p class="font-light">
+            I'm passionate Software Engineer with a strong affinity for
+            problem-solving, team building, and developing innovative
+            organizational products with my technical expertise.
+          </p>
         </div>
 
         <!-- Middle footer -->
-        <div class="w-full">
-          <h2 class="pb-3 font-semibold text-white">Newsletter</h2>
+        <div class="w-80">
+          <h2 class="font-semibold text-white">Newsletter</h2>
           <p class="font-light">Stay updated with my latest trends</p>
-          <input
-            class="w-80 p-2 mt-4 text-myback"
-            type="email"
-            id="email"
-            placeholder="Enter Email Address"
-          />
-          <span
-            ><i
-              class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
-            ></i
-          ></span>
+          <div class="flex">
+            <input
+              class="text-myback w-80"
+              type="email"
+              id="email"
+              placeholder="Enter Email Address"
+            />
+            <span
+              ><i
+                class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+              ></i
+            ></span>
+          </div>
         </div>
 
         <!-- Left footer -->
-        <div class="w-3/4/5 ml-8">
-          <h3 class="pb-3 font-semibold text-white">Follow Me</h3>
+        <div class="w-80">
+          <h3 class="font-semibold text-white">Follow Me</h3>
           <p class="font-light">Let us be social</p>
           <!-- socials -->
-          <div class="flex flex-row gap-4 text-xl pt-3">
+          <div class="flex flex-row gap-4 text-xl">
             <div
               class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
             >

@@ -51,7 +51,8 @@
     <!-- =============== -->
     <!-- Nav bar -->
     <header
-      class="bg-myback fixed shadow-lg top-0 text-white flex flex-row drop-shadow-xl justify-between w-full py-5 border-b-2 border-b-slate-700 z-10 px-14"
+      id="navbar"
+      class="bg-myback fixed shadow-lg top-0 text-white flex drop-shadow-xl justify-between items-center w-full py-5 border-b-2 border-b-slate-700 z-10 px-14 md:w-full"
     >
       <div class="text-xl pt-2 font-bold cursor-pointer">
         <h2>
@@ -61,7 +62,7 @@
       </div>
 
       <!-- menu list -->
-      <ul class="flex flex-row pr-8 gap-9 text-1xl pt-2 font-semibold">
+      <ul class="hidden lg:flex gap-9 text-1xl font-semibold">
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
@@ -80,12 +81,12 @@
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
-          <a href="./about.html" target="_blank">About</a>
+          <a href="./dist/about.html" target="_blank">About</a>
         </li>
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
         >
-          <a href="./blog.html" target="_blank">Blog</a>
+          <a href="./dist/blog.html" target="_blank">Blog</a>
         </li>
         <li
           class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
@@ -95,7 +96,7 @@
       </ul>
 
       <div
-        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold"
+        class="text-1xl bg-hoverColor py-2 px-4 cursor-pointer rounded-md hover:bg-slate-400 mr-4 transition duration-300 ease-in-out hover:scale-110 font-semibold hidden lg:flex"
       >
         <a href="../Images/Ayodeji Abolaji Resume.pdf" target="_blank"
           >Employ Me</a
@@ -103,21 +104,20 @@
       </div>
 
       <!-- menu icon-->
-      <i class="fa-solid fa-bars text-2xl hidden"></i>
+      <i class="fa-solid fa-bars text-2xl lg:hidden"></i>
     </header>
 
     <!-- ============= -->
     <!-- BLOG -->
 
     <section id="blog">
-      <div class="">
         <img
           src="../Images/Main.jpg"
           alt="Image"
           class="bg-local mix-blend-overlay h-screen w-screen object-cover border-y-8 object-center"
         />
         <div
-          class="absolute top-52 left-0 bottom-0 right-0 text-center px-52 text-white"
+          class="absolute lg:top-52 left-0 bottom-0 right-0 text-center lg:px-52 top-[100px] px-20 text-white"
         >
           <h2 class="pb-10 font-semibold text-7xl">Everything About Coding</h2>
           <p class="text-lg leading-8">
@@ -130,116 +130,115 @@
         </div>
       </div>
 
-      <div class="m-28">
-        <!-- Container -->
-        <div class="grid grid-cols-2 w-11/12 gap-14">
-          <!-- Big box -->
+      <!-- Container -->
+      <div
+        class="m-20 grid lg:grid-cols-2 grid-cols-1 w-11/12 mb-28 gap-20 "
+      >
+        <!-- Big box -->
+        <div class="bg-mySecColor h-max shadow-xl border-b-8 border-hoverColor">
+          <img
+            src="../Images/pexels-hitesh-choudhary-879109.jpg"
+            alt="Image"
+            class=""
+          />
+          <div class="p-5">
+            <h4 class="pb-3 font-bold text-2xl">HTML For Beginners</h4>
+            <p class="font-light">
+              Whether you’re interested in becoming a professional web developer
+              or you simply want to learn more about how websites work, the
+              first thing you need to study is HTML.
+            </p>
+            <span class="text-hoverColor"
+              ><a href="#" class="text-sm">Read More</a></span
+            >
+          </div>
+        </div>
+
+        <div class="grid lg:grid-row-3 grid-col gap-7 lg:w-9/12 w-6/12">
+          <!-- BOX 1 -->
           <div
-            class="bg-mySecColor h-max shadow-xl border-b-8 border-hoverColor"
+            class="bg-mySecColor h-max shadow-xl grid grid-cols-2 w-90 border-r-4 border-hoverColor"
           >
             <img
               src="../Images/pexels-hitesh-choudhary-879109.jpg"
               alt="Image"
               class=""
             />
-            <div class="p-5">
-              <h4 class="pb-3 font-bold text-2xl">HTML For Beginners</h4>
-              <p class="font-light">
-                Whether you’re interested in becoming a professional web
-                developer or you simply want to learn more about how websites
-                work, the first thing you need to study is HTML.
-              </p>
+            <div class="p-2">
+              <h4 class="pb-3 font-bold text-xl">
+                How to Work with CSS Style Sheets
+              </h4>
               <span class="text-hoverColor"
                 ><a href="#" class="text-sm">Read More</a></span
               >
             </div>
           </div>
 
-          <div class="grid grid-row-3 gap-7 w-9/12">
-            <!-- BOX 1 -->
-            <div
-              class="bg-mySecColor h-max shadow-xl grid grid-cols-2 w-90 border-r-4 border-hoverColor"
-            >
-              <img
-                src="../Images/pexels-hitesh-choudhary-879109.jpg"
-                alt="Image"
-                class=""
-              />
-              <div class="p-2">
-                <h4 class="pb-3 font-bold text-xl">
-                  How to Work with CSS Style Sheets
-                </h4>
-                <span class="text-hoverColor"
-                  ><a href="#" class="text-sm">Read More</a></span
-                >
-              </div>
+          <!-- BOX 2 -->
+          <div
+            class="bg-mySecColor h-max shadow-xl grid grid-cols-2 w-96 border-r-4 border-white"
+          >
+            <img
+              src="../Images/pexels-christina-morillo-1181676.jpg"
+              alt="Image"
+              class=""
+            />
+            <div class="p-2">
+              <h4 class="pb-3 font-bold text-xl">
+                Learn the Basics of Git in Under 10 Minutes
+              </h4>
+              <span class="text-hoverColor"
+                ><a href="#" class="text-sm">Read More</a></span
+              >
             </div>
+          </div>
 
-            <!-- BOX 2 -->
-            <div
-              class="bg-mySecColor h-max shadow-xl grid grid-cols-2 w-96 border-r-4 border-white"
-            >
-              <img
-                src="../Images/pexels-christina-morillo-1181676.jpg"
-                alt="Image"
-                class=""
-              />
-              <div class="p-2">
-                <h4 class="pb-3 font-bold text-xl">
-                  Learn the Basics of Git in Under 10 Minutes
-                </h4>
-                <span class="text-hoverColor"
-                  ><a href="#" class="text-sm">Read More</a></span
-                >
-              </div>
-            </div>
-
-            <!-- BOX 3 -->
-            <div
-              class="bg-mySecColor h-max shadow-xl grid grid-cols-2 w-96 border-r-4 border-gray-500"
-            >
-              <img
-                src="../Images/pexels-kevin-ku-577585.jpg"
-                alt="Image"
-                class=""
-              />
-              <div class="p-2">
-                <h4 class="pb-3 font-bold text-xl">
-                  Getting Started With JavaScript - The Basics
-                </h4>
-                <span class="text-hoverColor"
-                  ><a href="#" class="text-sm">Read More</a></span
-                >
-              </div>
+          <!-- BOX 3 -->
+          <div
+            class="bg-mySecColor h-max shadow-xl grid grid-cols-2 w-96 border-r-4 border-gray-500"
+          >
+            <img
+              src="../Images/pexels-kevin-ku-577585.jpg"
+              alt="Image"
+              class=""
+            />
+            <div class="p-2">
+              <h4 class="pb-3 font-bold text-xl">
+                Getting Started With JavaScript - The Basics
+              </h4>
+              <span class="text-hoverColor"
+                ><a href="#" class="text-sm">Read More</a></span
+              >
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- New BoX -->
+      <!-- New BoX -->
 
-        <div
-          class="bg-mySecColor h-max shadow-xl mt-12 border-b-8 grid grid-cols-2 border-hoverColor"
-        >
-          <img src="../Images/pexels-neo-2653362.jpg" alt="Image" class="w-" />
-          <div class="p-5">
-            <h4 class="pb-3 font-bold text-2xl">
-              How to Become a Front End Developer
-            </h4>
-            <p class="font-light pb-3">
-              In today's digital age, front-end development has emerged as a
-              critical skill in the technology industry. Front-end developers
-              are responsible for creating visually appealing and user-friendly
-              interfaces that users interact with directly.
-            </p>
+      <div
+        class="bg-mySecColor h-max shadow-xl  border-b-8 grid lg:grid-cols-2 m-20 border-hoverColor"
+      >
+        <img src="../Images/pexels-neo-2653362.jpg" alt="Image" class="w-" />
+        <div class="p-5">
+          <h4 class="pb-3 font-bold text-2xl">
+            How to Become a Front End Developer
+          </h4>
+          <p class="font-light pb-3">
+            In today's digital age, front-end development has emerged as a
+            critical skill in the technology industry. Front-end developers are
+            responsible for creating visually appealing and user-friendly
+            interfaces that users interact with directly.
+          </p>
 
-            <p class="font-light pb-3">
-              If you have a passion for web design, love crafting captivating
-              user experiences, and want to embark on a rewarding career in
-              technology, becoming a front-end developer might be the perfect
-              path for you. In this article, we'll provide you with a
-              step-by-step guide on how to become a front-end developer.
-            </p>
-            <!-- <h1 class="pb-5 font-bold">
+          <p class="font-light pb-3">
+            If you have a passion for web design, love crafting captivating user
+            experiences, and want to embark on a rewarding career in technology,
+            becoming a front-end developer might be the perfect path for you. In
+            this article, we'll provide you with a step-by-step guide on how to
+            become a front-end developer.
+          </p>
+          <!-- <h1 class="pb-5 font-bold">
               Step 1: Learn HTML, CSS, and JavaScript
             </h1>
             <p class="font-light pb-3">
@@ -252,56 +251,60 @@
               doloribus harum quia laudantium libero alias mollitia quibusdam
               quo quam veniam?
             </p> -->
-            <span class="text-hoverColor"
-              ><a href="#" class="text-sm">Read More</a></span
-            >
-          </div>
+          <span class="text-hoverColor"
+            ><a href="#" class="text-sm">Read More</a></span
+          >
         </div>
-      </div>
     </section>
 
     <!-- ================ -->
     <!-- FOOTER SECTION-->
 
-    <footer class="m-20 border-t-2 text-gray-400 border-gray-400">
-      <div class="flex flex-row justify-between gap-32 w-5/6 mt-8">
-        <div class="">
-          <h2 class="pb-3 font-semibold text-white">
-            <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
-              >Code</span
-            >
-          </h2>
-          <div class="">
-            <h2 class="text-xl pb-1 font-semibold">About</h2>
-            <p class="w-80 font-light">
-              I'm Alfred, a passionate Software Engineer with a strong affinity
-              for problem-solving, team building, and developing innovative
-              organizational products with my technical expertise.
-            </p>
-          </div>
+    <footer
+      class="p-5 lg:px-[100px] px-10 border-t-2 text-gray-400 border-gray-400"
+    >
+      <h2 class="pb-3 font-semibold text-white">
+        <i class="fa-solid fa-clone"></i> Fred<span class="font-medium"
+          >Code</span
+        >
+      </h2>
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between justify-center gap-[50px] lg:gap-[100px] item-center"
+      >
+        <div class="w-80">
+          <h2 class="text-xl font-semibold">About</h2>
+          <p class="font-light">
+            I'm passionate Software Engineer with a strong affinity for
+            problem-solving, team building, and developing innovative
+            organizational products with my technical expertise.
+          </p>
         </div>
 
         <!-- Middle footer -->
-        <div class="w-full">
-          <h2 class="pb-3 font-semibold text-white">Newsletter</h2>
+        <div class="w-80">
+          <h2 class="font-semibold text-white">Newsletter</h2>
           <p class="font-light">Stay updated with my latest trends</p>
-          <input
-            class="w-80 p-2 mt-4 text-myback"
-            type="email"
-            id="email"
-            placeholder="Enter Email Address"
-          />
-          <i
-            class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
-          ></i>
+          <div class="flex">
+            <input
+              class="text-myback w-80"
+              type="email"
+              id="email"
+              placeholder="Enter Email Address"
+            />
+            <span
+              ><i
+                class="fa-solid fa-arrow-right p-3 cursor-pointer text-white hover:bg-gray-500 hover:text-white bg-hoverColor"
+              ></i
+            ></span>
+          </div>
         </div>
 
         <!-- Left footer -->
-        <div class="w-3/4/5 ml-8">
-          <h3 class="pb-3 font-semibold text-white">Follow Me</h3>
+        <div class="w-80">
+          <h3 class="font-semibold text-white">Follow Me</h3>
           <p class="font-light">Let us be social</p>
           <!-- socials -->
-          <div class="flex flex-row gap-4 text-xl pt-3">
+          <div class="flex flex-row gap-4 text-xl">
             <div
               class="hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110"
             >
@@ -352,7 +355,7 @@
         <div
           class="z-10 absolute left-10 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out animate-bounce font-semibold"
         >
-          <a href="./index.html"><i class="fa-solid fa-arrow-up sticky"></i></a>
+          <a href="#home"><i class="fa-solid fa-arrow-up sticky"></i></a>
         </div>
         <p>Copyright &copy; 2023 ABOLAJI ALFRED AYODEJI</p>
         <small class="font-light">Developed By @FredCode🤩</small>
